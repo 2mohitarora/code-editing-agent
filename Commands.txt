@@ -6,8 +6,12 @@ go mod init agent
 ----------------------
 # Download the dependencies
 go mod tidy
+go run ch01/main.go
+------------------------
+# Hey! I'm Mohit! How are you?
+# Can you come up with any nicknames that make fun of my first name?
 
-# Explain the hypothesis
+# Chapter 1: Explain the hypothesis and run the hypothesis
 ----------------------
 # The basic idea is : you send a prompt to the model that says it should reply in a certain way if it wants to use “a tool”. Then you, as the receiver of that message, “use the tool” by executing it and replying with the result. 
 
@@ -21,10 +25,23 @@ go mod tidy
 
 # hot and humid, 28 degrees celcius
 --------------------------
-# Chapter 1: Run the above hypothesis
-go run ch01/main.go
----------------------------
+Also explain below links 
+Client Tools:
+- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview
+- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/computer-use-tool
+- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/text-editor-tool 
+Server Tools:
+- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool 
+--------------------------
 # Chapter 2: Build first tool - readFile
-go run ch02/main.go
+cd ch02
+go run main.go
+
+# Explain what's in secret-file.txt
+# Claude, buddy, help me solve the riddle in the secret-file.txt file
+
+# Pretty cool right. You just give LLM a tool and it uses it when it thinks it’ll help solve the task. 
+# Remember: we didn’t say anything about “if a user asks you about a file, read the file”. We also didn’t say “if something looks like a filename, figure out how to read it”. No, none of that. We say “help me solve the thing in this file” and Claude realizes that it can read the file to answer that and off it goes.
 
 # what's in main.go?
+# What's going on in main.go? Be brief!
