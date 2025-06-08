@@ -45,3 +45,21 @@ go run main.go
 
 # what's in main.go?
 # What's going on in main.go? Be brief!
+--------------------------
+# Chapter 3: Build more tools - List files 
+
+cd ch03
+go run main.go
+
+# what do you see in this directory?
+# Tell me about all the Go files in here. Be brief!
+
+# Pretty cool - It's combining tools now 
+
+# What go version are we using in this project?
+
+--------------------------
+# Chapter 4: Add one more tool - Edit files 
+
+cd ch04
+go run main.go
