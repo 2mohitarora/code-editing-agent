@@ -6,6 +6,9 @@ go mod init agent
 ----------------------
 # Download the dependencies
 go mod tidy
+
+export ANTHROPIC_API_KEY="NOT COMMITTED"
+
 go run ch01/main.go
 ------------------------
 # Hey! I'm Mohit! How are you?
