@@ -63,3 +63,17 @@ go run main.go
 
 cd ch04
 go run main.go
+
+# hey claude, create fizzbuzz.js that I can run with Nodejs and that has fizzbuzz in it and executes it
+
+node fizzbuzz.js
+
+# Please edit fizzbuzz.js so that it only prints until 15
+
+# Create a thankyou.js script that rot13-decodes the following string ‘Gunax lbh sbe nggraqvat Feninan naq Fureva, obgu bs lbh ner nznmvat!’ and prints it
+
+node thankyou.js
+
+# Create a closing.js script that rot13-decodes the following string ‘Pbatenghyngvbaf ba ohvyqvat n pbqr-rqvgvat ntrag!’ and prints it
+
+node closing.js
