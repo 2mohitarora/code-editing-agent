@@ -1,0 +1,31 @@
+mkdir code-editing-agent
+cd code-editing-agent
+go mod init agent
+touch main.go
+
+#First Version
+----------------------
+# Download the dependencies
+go mod tidy
+
+# Run it
+go run ch01/main.go
+
+# Add First tool 
+----------------------
+# The basic idea is : you send a prompt to the model that says it should reply in a certain way if it wants to use “a tool”. Then you, as the receiver of that message, “use the tool” by executing it and replying with the result. 
+
+# You are a weather expert. When I ask you about the weather in a given location, I want you to reply with `get_weather(<location_name>)`. I will then tell you what the weather in that location is. Understood?
+
+# Wait for response 
+
+# Hey, what's the weather in Munich?
+
+# Wait for response 
+
+# hot and humid, 28 degrees celcius
+--------------------------
+# Run it
+go run ch02/main.go
+
+# what's in main.go?
