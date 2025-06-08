@@ -1,17 +1,13 @@
 mkdir code-editing-agent
 cd code-editing-agent
 go mod init agent
-touch main.go
 
 #First Version
 ----------------------
 # Download the dependencies
 go mod tidy
 
-# Run it
-go run ch01/main.go
-
-# Add First tool 
+# Explain the hypothesis
 ----------------------
 # The basic idea is : you send a prompt to the model that says it should reply in a certain way if it wants to use “a tool”. Then you, as the receiver of that message, “use the tool” by executing it and replying with the result. 
 
@@ -25,7 +21,10 @@ go run ch01/main.go
 
 # hot and humid, 28 degrees celcius
 --------------------------
-# Run it
+# Chapter 1: Run the above hypothesis
+go run ch01/main.go
+---------------------------
+# Chapter 2: Build first tool - readFile
 go run ch02/main.go
 
 # what's in main.go?
