@@ -32,9 +32,9 @@ context-sensitive decisions, for example refund approval in customer service wor
 
 ### Agent design foundations
 
-1. Model: The LLM powering the agent’s reasoning and decision-making
-2. Tools: External functions or APIs the agent can use to take action
-3. Instructions: Explicit guidelines and guardrails defining how the agent behaves
+1. Model (the brain): The LLM powering the agent’s reasoning and decision-making
+2. Tools (the hands): External functions Or MCP or APIs the agent can use to take action
+3. Instructions (the playbook): Explicit guidelines and guardrails defining how the agent behaves
 
 ```
 weather_agent = Agent(
