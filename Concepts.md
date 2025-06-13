@@ -43,3 +43,32 @@ weather_agent = Agent(
     tools=[get_weather]
 )
 ```
+
+#### Tools: 
+Tools extend your agent’s capabilities by using APIs from underlying applications or systems. For legacy systems without APIs, agents can rely on computer-use models to interact directly with those applications and systems through web and application UIs, just as a human would.
+
+Broadly speaking, agents need three types of tools:
+
+1. Data: Enable agents to retrieve context and information necessary for executing the workflow. `Query transaction databases or systems like CRMs, read PDF documents, or search the web.`    
+2. Action: Enable agents to interact with systems to take actions such as adding new information to databases, updating records, or sending messages. `Send emails and texts, update a CRM record, hand-off a customer service ticket to a human.`   
+3. Orchestration: Agents themselves can serve as tools for other agents (covered in separate section)
+
+#### Instructions:
+High-quality instructions are essential for any LLM-powered app, but especially critical for agents. Clear instructions reduce ambiguity and improve agent decision-making, resulting in smoother workflow execution and fewer errors.
+
+Best practices for agent instructions
+
+1. Use existing documents:
+2. Prompt agents to break down tasks:
+3. Define clear actions:
+4. Capture edge cases:
+
+#### Orchestration:
+Orchestration enable agents to execute workflows effectively.
+
+1. Single Agent systems, where a single model equipped with appropriate tools and
+instructions executes workflows in a loop.
+2. Multi-Agent systems, where workflow execution is distributed across multiple
+coordinated agents
+
+General recommendation is to use a Single Agent system
