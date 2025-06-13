@@ -18,3 +18,28 @@ Applications that integrate LLMs but don’t use them to control workflow execut
 
 ### When should we build an agent
 
+Building agents requires rethinking how your systems make decisions and handle complexity. Unlike conventional automation, agents are uniquely suited to workflows where traditional deterministic and rule-based approaches fall short.
+
+Example: Payment Fraud Analysis
+A traditional rules engine works like a checklist, flagging transactions based on preset criteria. In contrast, an LLM agent functions more like a seasoned investigator, evaluating context, considering subtle patterns, and identifying suspicious activity even when clear-cut rules aren’t violated. This nuanced reasoning capability is exactly what enables agents to manage complex, ambiguous situations effectively
+
+Few inputs to consider before you decide to build an agent:
+
+1. Complex decision-making: Workflows involving nuanced judgment, exceptions, or 
+context-sensitive decisions, for example refund approval in customer service workflows.
+2. Difficult-to-maintain rules: Systems that have become unwieldy due to extensive and intricate rulesets, making updates costly or error-prone, for example performing vendor security reviews. 
+3. Heavy reliance on unstructured data: Scenarios that involve interpreting natural language, extracting meaning from documents, or interacting with users conversationally, for example processing a home insurance claim. 
+
+### Agent design foundations
+
+1. Model: The LLM powering the agent’s reasoning and decision-making
+2. Tools: External functions or APIs the agent can use to take action
+3. Instructions: Explicit guidelines and guardrails defining how the agent behaves
+
+```
+weather_agent = Agent(
+    name="Weather agent",
+    instructions="You are a helpful agent who can talk to users about the weather",
+    tools=[get_weather]
+)
+```
