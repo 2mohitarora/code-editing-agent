@@ -58,10 +58,10 @@ High-quality instructions are essential for any LLM-powered app, but especially 
 
 Best practices for agent instructions
 
-1. Use existing documents:
-2. Prompt agents to break down tasks:
-3. Define clear actions:
-4. Capture edge cases:
+1. Use existing documents
+2. Prompt agents to break down tasks
+3. Define clear actions
+4. Capture edge cases
 
 #### Orchestration:
 Orchestration enable agents to execute workflows effectively.
@@ -72,3 +72,5 @@ instructions executes workflows in a loop.
 coordinated agents
 
 General recommendation is to use a Single Agent system
+
+#### Guardrails:
